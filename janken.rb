@@ -22,18 +22,6 @@ def jyanken
     end
 
 end
-=begin
-next_game1 = true
-
-while next_game1
-    next_game1 = jyanken
-end
-=end
-#next_game1 = true
-
-#while next_game1
-    #next_game1 = jyanken
-#end
 
 re_jyanken = true
 
@@ -58,47 +46,10 @@ def acchimuitehoi
         return false
     else
         #puts "引き分け"
-        return true
+        return jyanken
     end
 
 end
-=begin
-next_game2 = true
-
-    while acchimuitehoi
-        while next_game2
-            next_game2 = jyanken
-        end
-    end
-=end
-#next_game2 = true
-
-#while acchimuitehoi
-    #while next_game2
-        #next_game2 = jyanken
-    #end
-#end
-
-=begin
-
-def re_jyanken
-    if jyanken == true
-        jyanken
-    end
-end
-
-def re_hoi
-    if acchimuitehoi == true
-        jyanken
-    end
-end
-
-jyanken
-re_hoi
-acchimuitehoi
-re_jyanken
-
-=end
 
 next_game = true
   
