@@ -20,13 +20,7 @@ def jyanken
         @jyanken_result = "lose"
         return false
     end
-
-end
-
-re_jyanken = true
-
-while re_jyanken
-    re_jyanken = jyanken
+        
 end
 
 #あっち向いてホイメソッド
@@ -45,16 +39,14 @@ def acchimuitehoi
         puts "負け"
         return false
     else
-        #puts "引き分け"
-        return jyanken
+        puts "引き分け"
+        return true
     end
 
 end
 
 next_game = true
-  
-while acchimuitehoi
-  while next_game
+
+while next_game
     next_game = jyanken
-  end
 end
