@@ -10,17 +10,17 @@ def jyanken
 
     if my_hand == your_hand
         puts "あいこでしょ"
-        return true
+        jyanken
     elsif (my_hand == 0 && your_hand == 1) || (my_hand == 1 && your_hand == 2) || (my_hand == 2 && your_hand == 0)
         puts "勝ち"
         @jyanken_result = "win"
-        return false
+        acchimuitehoi
     else
         puts "負け"
         @jyanken_result = "lose"
-        return false
+        acchimuitehoi
     end
-        
+
 end
 
 #あっち向いてホイメソッド
@@ -40,13 +40,9 @@ def acchimuitehoi
         return false
     else
         puts "引き分け"
-        return true
+        jyanken
     end
 
 end
 
-next_game = true
-
-while next_game
-    next_game = jyanken
-end
+jyanken
